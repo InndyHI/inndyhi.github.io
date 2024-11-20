@@ -1,0 +1,5191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#vis.vega-embed {
+				width: 100%;
+				display: flex;
+			}
+
+			#vis.vega-embed details,
+			#vis.vega-embed details summary {
+				position: relative;
+			}
+		</style>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/vega@5"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/vega-embed@6"
+		></script>
+	</head>
+	<body>
+		<div id="vis"></div>
+		<script>
+			(function (vegaEmbed) {
+				var spec = {
+					config: { view: { continuousWidth: 300, continuousHeight: 300 } },
+					data: { name: 'data-4f0809a048808d4642fcbc54db3972f8' },
+					mark: { type: 'bar' },
+					encoding: {
+						color: {
+							field: 'Usage Description',
+							scale: { scheme: 'category20' },
+							title: 'Usage Description',
+							type: 'nominal',
+						},
+						tooltip: [
+							{ field: 'Year Constructed', type: 'quantitative' },
+							{ field: 'Usage Description', type: 'nominal' },
+							{ field: 'Square Footage', type: 'quantitative' },
+						],
+						x: {
+							field: 'Year Constructed',
+							title: 'Year Constructed',
+							type: 'ordinal',
+						},
+						y: {
+							field: 'Square Footage',
+							title: 'Total Square Footage',
+							type: 'quantitative',
+						},
+					},
+					height: 400,
+					title: 'Total Square Footage by Usage Description',
+					width: 1200,
+					$schema: 'https://vega.github.io/schema/vega-lite/v5.20.1.json',
+					datasets: {
+						'data-4f0809a048808d4642fcbc54db3972f8': [
+							{
+								'Year Constructed': 1753,
+								'Usage Description': 'Assembly',
+								'Square Footage': 15001,
+							},
+							{
+								'Year Constructed': 1802,
+								'Usage Description': 'Assembly',
+								'Square Footage': 4440,
+							},
+							{
+								'Year Constructed': 1810,
+								'Usage Description': 'Assembly',
+								'Square Footage': 4033,
+							},
+							{
+								'Year Constructed': 1812,
+								'Usage Description': 'Assembly',
+								'Square Footage': 5500,
+							},
+							{
+								'Year Constructed': 1815,
+								'Usage Description': 'Education',
+								'Square Footage': 800,
+							},
+							{
+								'Year Constructed': 1830,
+								'Usage Description': 'Assembly',
+								'Square Footage': 255000,
+							},
+							{
+								'Year Constructed': 1832,
+								'Usage Description': 'Unusual',
+								'Square Footage': 120000,
+							},
+							{
+								'Year Constructed': 1837,
+								'Usage Description': 'Assembly',
+								'Square Footage': 10302,
+							},
+							{
+								'Year Constructed': 1837,
+								'Usage Description': 'Residential',
+								'Square Footage': 1113,
+							},
+							{
+								'Year Constructed': 1838,
+								'Usage Description': 'Residential',
+								'Square Footage': 2010,
+							},
+							{
+								'Year Constructed': 1839,
+								'Usage Description': 'Assembly',
+								'Square Footage': 12752,
+							},
+							{
+								'Year Constructed': 1840,
+								'Usage Description': 'Assembly',
+								'Square Footage': 28058,
+							},
+							{
+								'Year Constructed': 1840,
+								'Usage Description': 'Business',
+								'Square Footage': 9000,
+							},
+							{
+								'Year Constructed': 1840,
+								'Usage Description': 'Residential',
+								'Square Footage': 2140,
+							},
+							{
+								'Year Constructed': 1841,
+								'Usage Description': 'Assembly',
+								'Square Footage': 3256,
+							},
+							{
+								'Year Constructed': 1841,
+								'Usage Description': 'Residential',
+								'Square Footage': 660,
+							},
+							{
+								'Year Constructed': 1841,
+								'Usage Description': 'Unusual',
+								'Square Footage': 192,
+							},
+							{
+								'Year Constructed': 1842,
+								'Usage Description': 'Residential',
+								'Square Footage': 12837,
+							},
+							{
+								'Year Constructed': 1843,
+								'Usage Description': 'Assembly',
+								'Square Footage': 900,
+							},
+							{
+								'Year Constructed': 1844,
+								'Usage Description': 'Residential',
+								'Square Footage': 4808,
+							},
+							{
+								'Year Constructed': 1845,
+								'Usage Description': 'Assembly',
+								'Square Footage': 7868,
+							},
+							{
+								'Year Constructed': 1845,
+								'Usage Description': 'Business',
+								'Square Footage': 57978,
+							},
+							{
+								'Year Constructed': 1845,
+								'Usage Description': 'Industrial',
+								'Square Footage': 10824,
+							},
+							{
+								'Year Constructed': 1847,
+								'Usage Description': 'Residential',
+								'Square Footage': 1767,
+							},
+							{
+								'Year Constructed': 1848,
+								'Usage Description': 'Assembly',
+								'Square Footage': 17424,
+							},
+							{
+								'Year Constructed': 1848,
+								'Usage Description': 'Residential',
+								'Square Footage': 3868,
+							},
+							{
+								'Year Constructed': 1850,
+								'Usage Description': 'Assembly',
+								'Square Footage': 2357,
+							},
+							{
+								'Year Constructed': 1850,
+								'Usage Description': 'Business',
+								'Square Footage': 500,
+							},
+							{
+								'Year Constructed': 1850,
+								'Usage Description': 'Residential',
+								'Square Footage': 1120,
+							},
+							{
+								'Year Constructed': 1852,
+								'Usage Description': 'Assembly',
+								'Square Footage': 7560,
+							},
+							{
+								'Year Constructed': 1853,
+								'Usage Description': 'Assembly',
+								'Square Footage': 2200,
+							},
+							{
+								'Year Constructed': 1854,
+								'Usage Description': 'Business',
+								'Square Footage': 15124,
+							},
+							{
+								'Year Constructed': 1854,
+								'Usage Description': 'Residential',
+								'Square Footage': 13840,
+							},
+							{
+								'Year Constructed': 1855,
+								'Usage Description': 'Assembly',
+								'Square Footage': 2106,
+							},
+							{
+								'Year Constructed': 1855,
+								'Usage Description': 'Industrial',
+								'Square Footage': 10952,
+							},
+							{
+								'Year Constructed': 1855,
+								'Usage Description': 'Residential',
+								'Square Footage': 45120,
+							},
+							{
+								'Year Constructed': 1855,
+								'Usage Description': 'Storage',
+								'Square Footage': 3146,
+							},
+							{
+								'Year Constructed': 1856,
+								'Usage Description': 'Assembly',
+								'Square Footage': 750,
+							},
+							{
+								'Year Constructed': 1856,
+								'Usage Description': 'Education',
+								'Square Footage': 10840,
+							},
+							{
+								'Year Constructed': 1858,
+								'Usage Description': 'Business',
+								'Square Footage': 15000,
+							},
+							{
+								'Year Constructed': 1858,
+								'Usage Description': 'Health Care',
+								'Square Footage': 7367,
+							},
+							{
+								'Year Constructed': 1859,
+								'Usage Description': 'Residential',
+								'Square Footage': 4847,
+							},
+							{
+								'Year Constructed': 1859,
+								'Usage Description': 'Storage',
+								'Square Footage': 6041,
+							},
+							{
+								'Year Constructed': 1860,
+								'Usage Description': 'Assembly',
+								'Square Footage': 575,
+							},
+							{
+								'Year Constructed': 1860,
+								'Usage Description': 'Residential',
+								'Square Footage': 6700,
+							},
+							{
+								'Year Constructed': 1860,
+								'Usage Description': 'Storage',
+								'Square Footage': 21345,
+							},
+							{
+								'Year Constructed': 1860,
+								'Usage Description': 'Unusual',
+								'Square Footage': 344,
+							},
+							{
+								'Year Constructed': 1861,
+								'Usage Description': 'Storage',
+								'Square Footage': 10400,
+							},
+							{
+								'Year Constructed': 1862,
+								'Usage Description': 'Assembly',
+								'Square Footage': 890,
+							},
+							{
+								'Year Constructed': 1863,
+								'Usage Description': 'Business',
+								'Square Footage': 15795,
+							},
+							{
+								'Year Constructed': 1863,
+								'Usage Description': 'Unusual',
+								'Square Footage': 800,
+							},
+							{
+								'Year Constructed': 1865,
+								'Usage Description': 'Assembly',
+								'Square Footage': 10508,
+							},
+							{
+								'Year Constructed': 1865,
+								'Usage Description': 'Business',
+								'Square Footage': 66150,
+							},
+							{
+								'Year Constructed': 1865,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 136980,
+							},
+							{
+								'Year Constructed': 1867,
+								'Usage Description': 'Industrial',
+								'Square Footage': 2700,
+							},
+							{
+								'Year Constructed': 1870,
+								'Usage Description': 'Assembly',
+								'Square Footage': 584,
+							},
+							{
+								'Year Constructed': 1871,
+								'Usage Description': 'Assembly',
+								'Square Footage': 3431,
+							},
+							{
+								'Year Constructed': 1871,
+								'Usage Description': 'Industrial',
+								'Square Footage': 1200,
+							},
+							{
+								'Year Constructed': 1871,
+								'Usage Description': 'Storage',
+								'Square Footage': 1772,
+							},
+							{
+								'Year Constructed': 1872,
+								'Usage Description': 'Assembly',
+								'Square Footage': 14900,
+							},
+							{
+								'Year Constructed': 1872,
+								'Usage Description': 'Business',
+								'Square Footage': 54118,
+							},
+							{
+								'Year Constructed': 1873,
+								'Usage Description': 'Residential',
+								'Square Footage': 11000,
+							},
+							{
+								'Year Constructed': 1875,
+								'Usage Description': 'Assembly',
+								'Square Footage': 1828,
+							},
+							{
+								'Year Constructed': 1875,
+								'Usage Description': 'Storage',
+								'Square Footage': 1980,
+							},
+							{
+								'Year Constructed': 1876,
+								'Usage Description': 'Business',
+								'Square Footage': 368000,
+							},
+							{
+								'Year Constructed': 1876,
+								'Usage Description': 'Education',
+								'Square Footage': 21400,
+							},
+							{
+								'Year Constructed': 1876,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 7680,
+							},
+							{
+								'Year Constructed': 1876,
+								'Usage Description': 'Residential',
+								'Square Footage': 1200,
+							},
+							{
+								'Year Constructed': 1876,
+								'Usage Description': 'Storage',
+								'Square Footage': 6000,
+							},
+							{
+								'Year Constructed': 1878,
+								'Usage Description': 'Assembly',
+								'Square Footage': 150,
+							},
+							{
+								'Year Constructed': 1878,
+								'Usage Description': 'Business',
+								'Square Footage': 56178,
+							},
+							{
+								'Year Constructed': 1878,
+								'Usage Description': 'Industrial',
+								'Square Footage': 33071,
+							},
+							{
+								'Year Constructed': 1879,
+								'Usage Description': 'Health Care',
+								'Square Footage': 21142,
+							},
+							{
+								'Year Constructed': 1879,
+								'Usage Description': 'Residential',
+								'Square Footage': 63052,
+							},
+							{
+								'Year Constructed': 1880,
+								'Usage Description': 'Assembly',
+								'Square Footage': 236204,
+							},
+							{
+								'Year Constructed': 1880,
+								'Usage Description': 'Industrial',
+								'Square Footage': 32530,
+							},
+							{
+								'Year Constructed': 1880,
+								'Usage Description': 'Residential',
+								'Square Footage': 7288,
+							},
+							{
+								'Year Constructed': 1880,
+								'Usage Description': 'Unusual',
+								'Square Footage': 300,
+							},
+							{
+								'Year Constructed': 1881,
+								'Usage Description': 'Assembly',
+								'Square Footage': 60938,
+							},
+							{
+								'Year Constructed': 1881,
+								'Usage Description': 'Health Care',
+								'Square Footage': 59266,
+							},
+							{
+								'Year Constructed': 1882,
+								'Usage Description': 'Assembly',
+								'Square Footage': 8719,
+							},
+							{
+								'Year Constructed': 1883,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1425,
+							},
+							{
+								'Year Constructed': 1885,
+								'Usage Description': 'Assembly',
+								'Square Footage': 24837,
+							},
+							{
+								'Year Constructed': 1885,
+								'Usage Description': 'Industrial',
+								'Square Footage': 29250,
+							},
+							{
+								'Year Constructed': 1885,
+								'Usage Description': 'Storage',
+								'Square Footage': 19753,
+							},
+							{
+								'Year Constructed': 1886,
+								'Usage Description': 'Business',
+								'Square Footage': 60553,
+							},
+							{
+								'Year Constructed': 1886,
+								'Usage Description': 'Industrial',
+								'Square Footage': 61970,
+							},
+							{
+								'Year Constructed': 1886,
+								'Usage Description': 'Residential',
+								'Square Footage': 16152,
+							},
+							{
+								'Year Constructed': 1886,
+								'Usage Description': 'Storage',
+								'Square Footage': 30698,
+							},
+							{
+								'Year Constructed': 1886,
+								'Usage Description': 'Unusual',
+								'Square Footage': 240,
+							},
+							{
+								'Year Constructed': 1887,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 151385,
+							},
+							{
+								'Year Constructed': 1888,
+								'Usage Description': 'Business',
+								'Square Footage': 28746,
+							},
+							{
+								'Year Constructed': 1890,
+								'Usage Description': 'Assembly',
+								'Square Footage': 28009,
+							},
+							{
+								'Year Constructed': 1890,
+								'Usage Description': 'Business',
+								'Square Footage': 960,
+							},
+							{
+								'Year Constructed': 1890,
+								'Usage Description': 'Residential',
+								'Square Footage': 1500,
+							},
+							{
+								'Year Constructed': 1890,
+								'Usage Description': 'Storage',
+								'Square Footage': 23500,
+							},
+							{
+								'Year Constructed': 1890,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1536,
+							},
+							{
+								'Year Constructed': 1891,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 4380,
+							},
+							{
+								'Year Constructed': 1891,
+								'Usage Description': 'Residential',
+								'Square Footage': 2325,
+							},
+							{
+								'Year Constructed': 1891,
+								'Usage Description': 'Storage',
+								'Square Footage': 37624,
+							},
+							{
+								'Year Constructed': 1892,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 109638,
+							},
+							{
+								'Year Constructed': 1892,
+								'Usage Description': 'Education',
+								'Square Footage': 142281,
+							},
+							{
+								'Year Constructed': 1893,
+								'Usage Description': 'Industrial',
+								'Square Footage': 37890,
+							},
+							{
+								'Year Constructed': 1893,
+								'Usage Description': 'Storage',
+								'Square Footage': 1700,
+							},
+							{
+								'Year Constructed': 1894,
+								'Usage Description': 'Assembly',
+								'Square Footage': 91600,
+							},
+							{
+								'Year Constructed': 1894,
+								'Usage Description': 'Residential',
+								'Square Footage': 3528,
+							},
+							{
+								'Year Constructed': 1894,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1000,
+							},
+							{
+								'Year Constructed': 1895,
+								'Usage Description': 'Assembly',
+								'Square Footage': 36220,
+							},
+							{
+								'Year Constructed': 1895,
+								'Usage Description': 'Business',
+								'Square Footage': 17044,
+							},
+							{
+								'Year Constructed': 1895,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 135483,
+							},
+							{
+								'Year Constructed': 1895,
+								'Usage Description': 'Health Care',
+								'Square Footage': 13500,
+							},
+							{
+								'Year Constructed': 1895,
+								'Usage Description': 'Residential',
+								'Square Footage': 1400,
+							},
+							{
+								'Year Constructed': 1895,
+								'Usage Description': 'Storage',
+								'Square Footage': 43260,
+							},
+							{
+								'Year Constructed': 1896,
+								'Usage Description': 'Assembly',
+								'Square Footage': 48012,
+							},
+							{
+								'Year Constructed': 1896,
+								'Usage Description': 'Business',
+								'Square Footage': 15000,
+							},
+							{
+								'Year Constructed': 1896,
+								'Usage Description': 'Education',
+								'Square Footage': 154993,
+							},
+							{
+								'Year Constructed': 1897,
+								'Usage Description': 'Assembly',
+								'Square Footage': 73160,
+							},
+							{
+								'Year Constructed': 1897,
+								'Usage Description': 'Business',
+								'Square Footage': 132907,
+							},
+							{
+								'Year Constructed': 1897,
+								'Usage Description': 'Health Care',
+								'Square Footage': 2975,
+							},
+							{
+								'Year Constructed': 1898,
+								'Usage Description': 'Assembly',
+								'Square Footage': 86076,
+							},
+							{
+								'Year Constructed': 1898,
+								'Usage Description': 'Business',
+								'Square Footage': 16308,
+							},
+							{
+								'Year Constructed': 1898,
+								'Usage Description': 'Health Care',
+								'Square Footage': 27090,
+							},
+							{
+								'Year Constructed': 1899,
+								'Usage Description': 'Business',
+								'Square Footage': 2864,
+							},
+							{
+								'Year Constructed': 1899,
+								'Usage Description': 'Education',
+								'Square Footage': 38230,
+							},
+							{
+								'Year Constructed': 1899,
+								'Usage Description': 'Residential',
+								'Square Footage': 32229,
+							},
+							{
+								'Year Constructed': 1900,
+								'Usage Description': 'Assembly',
+								'Square Footage': 362794,
+							},
+							{
+								'Year Constructed': 1900,
+								'Usage Description': 'Business',
+								'Square Footage': 66244,
+							},
+							{
+								'Year Constructed': 1900,
+								'Usage Description': 'Industrial',
+								'Square Footage': 48725,
+							},
+							{
+								'Year Constructed': 1900,
+								'Usage Description': 'Residential',
+								'Square Footage': 18465,
+							},
+							{
+								'Year Constructed': 1900,
+								'Usage Description': 'Storage',
+								'Square Footage': 53372,
+							},
+							{
+								'Year Constructed': 1901,
+								'Usage Description': 'Assembly',
+								'Square Footage': 86200,
+							},
+							{
+								'Year Constructed': 1901,
+								'Usage Description': 'Education',
+								'Square Footage': 86998,
+							},
+							{
+								'Year Constructed': 1901,
+								'Usage Description': 'Industrial',
+								'Square Footage': 1450,
+							},
+							{
+								'Year Constructed': 1902,
+								'Usage Description': 'Assembly',
+								'Square Footage': 50672,
+							},
+							{
+								'Year Constructed': 1902,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 1609,
+							},
+							{
+								'Year Constructed': 1902,
+								'Usage Description': 'Industrial',
+								'Square Footage': 214168,
+							},
+							{
+								'Year Constructed': 1902,
+								'Usage Description': 'Unusual',
+								'Square Footage': 3276,
+							},
+							{
+								'Year Constructed': 1903,
+								'Usage Description': 'Assembly',
+								'Square Footage': 42388,
+							},
+							{
+								'Year Constructed': 1903,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 71411,
+							},
+							{
+								'Year Constructed': 1903,
+								'Usage Description': 'Education',
+								'Square Footage': 23775,
+							},
+							{
+								'Year Constructed': 1903,
+								'Usage Description': 'Industrial',
+								'Square Footage': 10525,
+							},
+							{
+								'Year Constructed': 1903,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 18254,
+							},
+							{
+								'Year Constructed': 1903,
+								'Usage Description': 'Storage',
+								'Square Footage': 14356,
+							},
+							{
+								'Year Constructed': 1904,
+								'Usage Description': 'Assembly',
+								'Square Footage': 19300,
+							},
+							{
+								'Year Constructed': 1904,
+								'Usage Description': 'Business',
+								'Square Footage': 6088,
+							},
+							{
+								'Year Constructed': 1904,
+								'Usage Description': 'Storage',
+								'Square Footage': 3680,
+							},
+							{
+								'Year Constructed': 1905,
+								'Usage Description': 'Assembly',
+								'Square Footage': 144042,
+							},
+							{
+								'Year Constructed': 1905,
+								'Usage Description': 'Industrial',
+								'Square Footage': 16236,
+							},
+							{
+								'Year Constructed': 1905,
+								'Usage Description': 'Residential',
+								'Square Footage': 2000,
+							},
+							{
+								'Year Constructed': 1905,
+								'Usage Description': 'Storage',
+								'Square Footage': 14510,
+							},
+							{
+								'Year Constructed': 1906,
+								'Usage Description': 'Business',
+								'Square Footage': 54540,
+							},
+							{
+								'Year Constructed': 1906,
+								'Usage Description': 'Industrial',
+								'Square Footage': 67677,
+							},
+							{
+								'Year Constructed': 1906,
+								'Usage Description': 'Storage',
+								'Square Footage': 32574,
+							},
+							{
+								'Year Constructed': 1906,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2900,
+							},
+							{
+								'Year Constructed': 1907,
+								'Usage Description': 'Assembly',
+								'Square Footage': 50272,
+							},
+							{
+								'Year Constructed': 1907,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 22716,
+							},
+							{
+								'Year Constructed': 1907,
+								'Usage Description': 'Industrial',
+								'Square Footage': 10125,
+							},
+							{
+								'Year Constructed': 1907,
+								'Usage Description': 'Storage',
+								'Square Footage': 57007,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Assembly',
+								'Square Footage': 114411,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Business',
+								'Square Footage': 46906,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Education',
+								'Square Footage': 32146,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Health Care',
+								'Square Footage': 6400,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Industrial',
+								'Square Footage': 104117,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Storage',
+								'Square Footage': 10984,
+							},
+							{
+								'Year Constructed': 1908,
+								'Usage Description': 'Unusual',
+								'Square Footage': 40000,
+							},
+							{
+								'Year Constructed': 1909,
+								'Usage Description': 'Assembly',
+								'Square Footage': 40169,
+							},
+							{
+								'Year Constructed': 1909,
+								'Usage Description': 'Business',
+								'Square Footage': 16858,
+							},
+							{
+								'Year Constructed': 1909,
+								'Usage Description': 'Industrial',
+								'Square Footage': 19440,
+							},
+							{
+								'Year Constructed': 1909,
+								'Usage Description': 'Residential',
+								'Square Footage': 79535,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Business',
+								'Square Footage': 14023,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Education',
+								'Square Footage': 126379,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Health Care',
+								'Square Footage': 11300,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Industrial',
+								'Square Footage': 43213,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 4692,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Residential',
+								'Square Footage': 600,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Storage',
+								'Square Footage': 99061,
+							},
+							{
+								'Year Constructed': 1910,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2870,
+							},
+							{
+								'Year Constructed': 1911,
+								'Usage Description': 'Assembly',
+								'Square Footage': 179002,
+							},
+							{
+								'Year Constructed': 1911,
+								'Usage Description': 'Business',
+								'Square Footage': 2625,
+							},
+							{
+								'Year Constructed': 1911,
+								'Usage Description': 'Education',
+								'Square Footage': 31833,
+							},
+							{
+								'Year Constructed': 1911,
+								'Usage Description': 'Industrial',
+								'Square Footage': 51894,
+							},
+							{
+								'Year Constructed': 1912,
+								'Usage Description': 'Assembly',
+								'Square Footage': 102352,
+							},
+							{
+								'Year Constructed': 1912,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 80873,
+							},
+							{
+								'Year Constructed': 1912,
+								'Usage Description': 'Education',
+								'Square Footage': 15262,
+							},
+							{
+								'Year Constructed': 1912,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 31683,
+							},
+							{
+								'Year Constructed': 1912,
+								'Usage Description': 'Residential',
+								'Square Footage': 3464,
+							},
+							{
+								'Year Constructed': 1912,
+								'Usage Description': 'Storage',
+								'Square Footage': 197082,
+							},
+							{
+								'Year Constructed': 1913,
+								'Usage Description': 'Assembly',
+								'Square Footage': 36567,
+							},
+							{
+								'Year Constructed': 1913,
+								'Usage Description': 'Business',
+								'Square Footage': 151980,
+							},
+							{
+								'Year Constructed': 1913,
+								'Usage Description': 'Industrial',
+								'Square Footage': 32323,
+							},
+							{
+								'Year Constructed': 1913,
+								'Usage Description': 'Residential',
+								'Square Footage': 4471,
+							},
+							{
+								'Year Constructed': 1913,
+								'Usage Description': 'Storage',
+								'Square Footage': 60360,
+							},
+							{
+								'Year Constructed': 1914,
+								'Usage Description': 'Business',
+								'Square Footage': 9157,
+							},
+							{
+								'Year Constructed': 1914,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 7060,
+							},
+							{
+								'Year Constructed': 1914,
+								'Usage Description': 'Education',
+								'Square Footage': 10998,
+							},
+							{
+								'Year Constructed': 1914,
+								'Usage Description': 'Industrial',
+								'Square Footage': 9050,
+							},
+							{
+								'Year Constructed': 1914,
+								'Usage Description': 'Residential',
+								'Square Footage': 21310,
+							},
+							{
+								'Year Constructed': 1914,
+								'Usage Description': 'Unusual',
+								'Square Footage': 5500,
+							},
+							{
+								'Year Constructed': 1915,
+								'Usage Description': 'Assembly',
+								'Square Footage': 332145,
+							},
+							{
+								'Year Constructed': 1915,
+								'Usage Description': 'Business',
+								'Square Footage': 118083,
+							},
+							{
+								'Year Constructed': 1915,
+								'Usage Description': 'Health Care',
+								'Square Footage': 17831,
+							},
+							{
+								'Year Constructed': 1915,
+								'Usage Description': 'Industrial',
+								'Square Footage': 222922,
+							},
+							{
+								'Year Constructed': 1915,
+								'Usage Description': 'Storage',
+								'Square Footage': 3736,
+							},
+							{
+								'Year Constructed': 1916,
+								'Usage Description': 'Assembly',
+								'Square Footage': 49608,
+							},
+							{
+								'Year Constructed': 1916,
+								'Usage Description': 'Business',
+								'Square Footage': 103973,
+							},
+							{
+								'Year Constructed': 1916,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 15210,
+							},
+							{
+								'Year Constructed': 1916,
+								'Usage Description': 'Education',
+								'Square Footage': 105330,
+							},
+							{
+								'Year Constructed': 1916,
+								'Usage Description': 'Industrial',
+								'Square Footage': 516,
+							},
+							{
+								'Year Constructed': 1916,
+								'Usage Description': 'Storage',
+								'Square Footage': 4899,
+							},
+							{
+								'Year Constructed': 1917,
+								'Usage Description': 'Education',
+								'Square Footage': 46950,
+							},
+							{
+								'Year Constructed': 1917,
+								'Usage Description': 'Industrial',
+								'Square Footage': 36102,
+							},
+							{
+								'Year Constructed': 1917,
+								'Usage Description': 'Unusual',
+								'Square Footage': 4896,
+							},
+							{
+								'Year Constructed': 1918,
+								'Usage Description': 'Assembly',
+								'Square Footage': 15890,
+							},
+							{
+								'Year Constructed': 1918,
+								'Usage Description': 'Business',
+								'Square Footage': 10765,
+							},
+							{
+								'Year Constructed': 1918,
+								'Usage Description': 'Residential',
+								'Square Footage': 6730,
+							},
+							{
+								'Year Constructed': 1919,
+								'Usage Description': 'Business',
+								'Square Footage': 12035,
+							},
+							{
+								'Year Constructed': 1919,
+								'Usage Description': 'Education',
+								'Square Footage': 27042,
+							},
+							{
+								'Year Constructed': 1919,
+								'Usage Description': 'Health Care',
+								'Square Footage': 5476,
+							},
+							{
+								'Year Constructed': 1919,
+								'Usage Description': 'Industrial',
+								'Square Footage': 18225,
+							},
+							{
+								'Year Constructed': 1919,
+								'Usage Description': 'Residential',
+								'Square Footage': 3150,
+							},
+							{
+								'Year Constructed': 1920,
+								'Usage Description': 'Business',
+								'Square Footage': 71379,
+							},
+							{
+								'Year Constructed': 1920,
+								'Usage Description': 'Education',
+								'Square Footage': 110343,
+							},
+							{
+								'Year Constructed': 1920,
+								'Usage Description': 'Industrial',
+								'Square Footage': 197545,
+							},
+							{
+								'Year Constructed': 1920,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 941,
+							},
+							{
+								'Year Constructed': 1920,
+								'Usage Description': 'Residential',
+								'Square Footage': 40177,
+							},
+							{
+								'Year Constructed': 1920,
+								'Usage Description': 'Storage',
+								'Square Footage': 34685,
+							},
+							{
+								'Year Constructed': 1921,
+								'Usage Description': 'Business',
+								'Square Footage': 8876,
+							},
+							{
+								'Year Constructed': 1921,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 44042,
+							},
+							{
+								'Year Constructed': 1921,
+								'Usage Description': 'Health Care',
+								'Square Footage': 32379,
+							},
+							{
+								'Year Constructed': 1921,
+								'Usage Description': 'Industrial',
+								'Square Footage': 32834,
+							},
+							{
+								'Year Constructed': 1922,
+								'Usage Description': 'Assembly',
+								'Square Footage': 118376,
+							},
+							{
+								'Year Constructed': 1922,
+								'Usage Description': 'Business',
+								'Square Footage': 49396,
+							},
+							{
+								'Year Constructed': 1922,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 52296,
+							},
+							{
+								'Year Constructed': 1922,
+								'Usage Description': 'Health Care',
+								'Square Footage': 55764,
+							},
+							{
+								'Year Constructed': 1922,
+								'Usage Description': 'Industrial',
+								'Square Footage': 2928,
+							},
+							{
+								'Year Constructed': 1922,
+								'Usage Description': 'Residential',
+								'Square Footage': 7818,
+							},
+							{
+								'Year Constructed': 1923,
+								'Usage Description': 'Business',
+								'Square Footage': 430055,
+							},
+							{
+								'Year Constructed': 1923,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 12449,
+							},
+							{
+								'Year Constructed': 1923,
+								'Usage Description': 'Industrial',
+								'Square Footage': 47493,
+							},
+							{
+								'Year Constructed': 1923,
+								'Usage Description': 'Residential',
+								'Square Footage': 2540,
+							},
+							{
+								'Year Constructed': 1923,
+								'Usage Description': 'Storage',
+								'Square Footage': 1004,
+							},
+							{
+								'Year Constructed': 1923,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2519,
+							},
+							{
+								'Year Constructed': 1924,
+								'Usage Description': 'Assembly',
+								'Square Footage': 599200,
+							},
+							{
+								'Year Constructed': 1924,
+								'Usage Description': 'Business',
+								'Square Footage': 4988,
+							},
+							{
+								'Year Constructed': 1924,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 50492,
+							},
+							{
+								'Year Constructed': 1924,
+								'Usage Description': 'Education',
+								'Square Footage': 99092,
+							},
+							{
+								'Year Constructed': 1924,
+								'Usage Description': 'Health Care',
+								'Square Footage': 38988,
+							},
+							{
+								'Year Constructed': 1924,
+								'Usage Description': 'Industrial',
+								'Square Footage': 20164,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Assembly',
+								'Square Footage': 257876,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Education',
+								'Square Footage': 7490,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Health Care',
+								'Square Footage': 211004,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Industrial',
+								'Square Footage': 40529,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Residential',
+								'Square Footage': 1800,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Storage',
+								'Square Footage': 750,
+							},
+							{
+								'Year Constructed': 1925,
+								'Usage Description': 'Unusual',
+								'Square Footage': 25,
+							},
+							{
+								'Year Constructed': 1926,
+								'Usage Description': 'Assembly',
+								'Square Footage': 355990,
+							},
+							{
+								'Year Constructed': 1926,
+								'Usage Description': 'Business',
+								'Square Footage': 4635,
+							},
+							{
+								'Year Constructed': 1926,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 6000,
+							},
+							{
+								'Year Constructed': 1926,
+								'Usage Description': 'Health Care',
+								'Square Footage': 73317,
+							},
+							{
+								'Year Constructed': 1926,
+								'Usage Description': 'Industrial',
+								'Square Footage': 7280,
+							},
+							{
+								'Year Constructed': 1926,
+								'Usage Description': 'Storage',
+								'Square Footage': 102911,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Assembly',
+								'Square Footage': 38662,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Business',
+								'Square Footage': 158582,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 18150,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Education',
+								'Square Footage': 28808,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Industrial',
+								'Square Footage': 371748,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Residential',
+								'Square Footage': 2718,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Storage',
+								'Square Footage': 13777,
+							},
+							{
+								'Year Constructed': 1927,
+								'Usage Description': 'Unusual',
+								'Square Footage': 5200,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Assembly',
+								'Square Footage': 130784,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Business',
+								'Square Footage': 94452,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 93440,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Education',
+								'Square Footage': 80510,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Health Care',
+								'Square Footage': 26100,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Industrial',
+								'Square Footage': 89160,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Residential',
+								'Square Footage': 9966,
+							},
+							{
+								'Year Constructed': 1928,
+								'Usage Description': 'Storage',
+								'Square Footage': 25944,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Assembly',
+								'Square Footage': 363269,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Business',
+								'Square Footage': 486790,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 64235,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Health Care',
+								'Square Footage': 22511,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Industrial',
+								'Square Footage': 108663,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Residential',
+								'Square Footage': 10200,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Storage',
+								'Square Footage': 17436,
+							},
+							{
+								'Year Constructed': 1929,
+								'Usage Description': 'Unusual',
+								'Square Footage': 12059,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Assembly',
+								'Square Footage': 106710,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Business',
+								'Square Footage': 29292,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 230018,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Education',
+								'Square Footage': 3045,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Health Care',
+								'Square Footage': 203094,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Industrial',
+								'Square Footage': 274773,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 34187,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Residential',
+								'Square Footage': 83555,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Storage',
+								'Square Footage': 116554,
+							},
+							{
+								'Year Constructed': 1930,
+								'Usage Description': 'Unusual',
+								'Square Footage': 114,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Assembly',
+								'Square Footage': 164903,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Business',
+								'Square Footage': 70336,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 22858,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Education',
+								'Square Footage': 4747,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Health Care',
+								'Square Footage': 188839,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Industrial',
+								'Square Footage': 105150,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Residential',
+								'Square Footage': 8535,
+							},
+							{
+								'Year Constructed': 1931,
+								'Usage Description': 'Storage',
+								'Square Footage': 5650,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Assembly',
+								'Square Footage': 96858,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Business',
+								'Square Footage': 45028,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 165260,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Industrial',
+								'Square Footage': 33519,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 1155,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Residential',
+								'Square Footage': 75786,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Storage',
+								'Square Footage': 3194,
+							},
+							{
+								'Year Constructed': 1932,
+								'Usage Description': 'Unusual',
+								'Square Footage': 5347,
+							},
+							{
+								'Year Constructed': 1933,
+								'Usage Description': 'Business',
+								'Square Footage': 77068,
+							},
+							{
+								'Year Constructed': 1933,
+								'Usage Description': 'Education',
+								'Square Footage': 16880,
+							},
+							{
+								'Year Constructed': 1933,
+								'Usage Description': 'Health Care',
+								'Square Footage': 6848,
+							},
+							{
+								'Year Constructed': 1933,
+								'Usage Description': 'Industrial',
+								'Square Footage': 13150,
+							},
+							{
+								'Year Constructed': 1933,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 990,
+							},
+							{
+								'Year Constructed': 1933,
+								'Usage Description': 'Residential',
+								'Square Footage': 2581,
+							},
+							{
+								'Year Constructed': 1934,
+								'Usage Description': 'Assembly',
+								'Square Footage': 10333,
+							},
+							{
+								'Year Constructed': 1934,
+								'Usage Description': 'Business',
+								'Square Footage': 59355,
+							},
+							{
+								'Year Constructed': 1934,
+								'Usage Description': 'Education',
+								'Square Footage': 50308,
+							},
+							{
+								'Year Constructed': 1934,
+								'Usage Description': 'Industrial',
+								'Square Footage': 3092,
+							},
+							{
+								'Year Constructed': 1934,
+								'Usage Description': 'Residential',
+								'Square Footage': 32450,
+							},
+							{
+								'Year Constructed': 1934,
+								'Usage Description': 'Storage',
+								'Square Footage': 9088,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Assembly',
+								'Square Footage': 149837,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Business',
+								'Square Footage': 111890,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 124624,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Education',
+								'Square Footage': 11634,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Health Care',
+								'Square Footage': 28580,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Industrial',
+								'Square Footage': 61473,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 4859,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Residential',
+								'Square Footage': 202301,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Storage',
+								'Square Footage': 67628,
+							},
+							{
+								'Year Constructed': 1935,
+								'Usage Description': 'Unusual',
+								'Square Footage': 7092,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Assembly',
+								'Square Footage': 82853,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Business',
+								'Square Footage': 89944,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 154306,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Health Care',
+								'Square Footage': 48215,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Industrial',
+								'Square Footage': 6048,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Residential',
+								'Square Footage': 242830,
+							},
+							{
+								'Year Constructed': 1936,
+								'Usage Description': 'Storage',
+								'Square Footage': 42530,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Assembly',
+								'Square Footage': 239995,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Business',
+								'Square Footage': 300160,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 239868,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Education',
+								'Square Footage': 44219,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Health Care',
+								'Square Footage': 129381,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Industrial',
+								'Square Footage': 46305,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Residential',
+								'Square Footage': 44510,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Storage',
+								'Square Footage': 28866,
+							},
+							{
+								'Year Constructed': 1937,
+								'Usage Description': 'Unusual',
+								'Square Footage': 156,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Assembly',
+								'Square Footage': 677808,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Business',
+								'Square Footage': 152682,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 1772,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Health Care',
+								'Square Footage': 222825,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Industrial',
+								'Square Footage': 11241,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Residential',
+								'Square Footage': 4553,
+							},
+							{
+								'Year Constructed': 1938,
+								'Usage Description': 'Storage',
+								'Square Footage': 2748,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Assembly',
+								'Square Footage': 63737,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Business',
+								'Square Footage': 36932,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 4823,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Industrial',
+								'Square Footage': 16202,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 1000,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Residential',
+								'Square Footage': 25541,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Storage',
+								'Square Footage': 37073,
+							},
+							{
+								'Year Constructed': 1939,
+								'Usage Description': 'Unusual',
+								'Square Footage': 730,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Assembly',
+								'Square Footage': 431505,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Business',
+								'Square Footage': 278717,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 46849,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Education',
+								'Square Footage': 28270,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Health Care',
+								'Square Footage': 139856,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Industrial',
+								'Square Footage': 512614,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 15600,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Residential',
+								'Square Footage': 82848,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Storage',
+								'Square Footage': 197130,
+							},
+							{
+								'Year Constructed': 1940,
+								'Usage Description': 'Unusual',
+								'Square Footage': 3217,
+							},
+							{
+								'Year Constructed': 1941,
+								'Usage Description': 'Business',
+								'Square Footage': 133078,
+							},
+							{
+								'Year Constructed': 1941,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 26534,
+							},
+							{
+								'Year Constructed': 1941,
+								'Usage Description': 'Industrial',
+								'Square Footage': 115467,
+							},
+							{
+								'Year Constructed': 1941,
+								'Usage Description': 'Residential',
+								'Square Footage': 6198,
+							},
+							{
+								'Year Constructed': 1941,
+								'Usage Description': 'Storage',
+								'Square Footage': 49784,
+							},
+							{
+								'Year Constructed': 1941,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1844,
+							},
+							{
+								'Year Constructed': 1942,
+								'Usage Description': 'Assembly',
+								'Square Footage': 84703,
+							},
+							{
+								'Year Constructed': 1942,
+								'Usage Description': 'Business',
+								'Square Footage': 73660,
+							},
+							{
+								'Year Constructed': 1942,
+								'Usage Description': 'Industrial',
+								'Square Footage': 49908,
+							},
+							{
+								'Year Constructed': 1942,
+								'Usage Description': 'Residential',
+								'Square Footage': 80878,
+							},
+							{
+								'Year Constructed': 1942,
+								'Usage Description': 'Storage',
+								'Square Footage': 40077,
+							},
+							{
+								'Year Constructed': 1942,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1702,
+							},
+							{
+								'Year Constructed': 1943,
+								'Usage Description': 'Assembly',
+								'Square Footage': 48000,
+							},
+							{
+								'Year Constructed': 1943,
+								'Usage Description': 'Business',
+								'Square Footage': 3176,
+							},
+							{
+								'Year Constructed': 1943,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 17898,
+							},
+							{
+								'Year Constructed': 1943,
+								'Usage Description': 'Health Care',
+								'Square Footage': 27954,
+							},
+							{
+								'Year Constructed': 1943,
+								'Usage Description': 'Industrial',
+								'Square Footage': 24956,
+							},
+							{
+								'Year Constructed': 1943,
+								'Usage Description': 'Storage',
+								'Square Footage': 2453,
+							},
+							{
+								'Year Constructed': 1944,
+								'Usage Description': 'Business',
+								'Square Footage': 7730,
+							},
+							{
+								'Year Constructed': 1944,
+								'Usage Description': 'Health Care',
+								'Square Footage': 36877,
+							},
+							{
+								'Year Constructed': 1944,
+								'Usage Description': 'Industrial',
+								'Square Footage': 1141,
+							},
+							{
+								'Year Constructed': 1944,
+								'Usage Description': 'Residential',
+								'Square Footage': 2545,
+							},
+							{
+								'Year Constructed': 1944,
+								'Usage Description': 'Storage',
+								'Square Footage': 11736,
+							},
+							{
+								'Year Constructed': 1944,
+								'Usage Description': 'Unusual',
+								'Square Footage': 19918,
+							},
+							{
+								'Year Constructed': 1945,
+								'Usage Description': 'Assembly',
+								'Square Footage': 365,
+							},
+							{
+								'Year Constructed': 1945,
+								'Usage Description': 'Business',
+								'Square Footage': 72791,
+							},
+							{
+								'Year Constructed': 1945,
+								'Usage Description': 'Education',
+								'Square Footage': 137137,
+							},
+							{
+								'Year Constructed': 1945,
+								'Usage Description': 'Industrial',
+								'Square Footage': 8480,
+							},
+							{
+								'Year Constructed': 1945,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 3034,
+							},
+							{
+								'Year Constructed': 1945,
+								'Usage Description': 'Storage',
+								'Square Footage': 69718,
+							},
+							{
+								'Year Constructed': 1946,
+								'Usage Description': 'Assembly',
+								'Square Footage': 50275,
+							},
+							{
+								'Year Constructed': 1946,
+								'Usage Description': 'Business',
+								'Square Footage': 2447,
+							},
+							{
+								'Year Constructed': 1946,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 23211,
+							},
+							{
+								'Year Constructed': 1946,
+								'Usage Description': 'Industrial',
+								'Square Footage': 77046,
+							},
+							{
+								'Year Constructed': 1946,
+								'Usage Description': 'Storage',
+								'Square Footage': 10990,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Assembly',
+								'Square Footage': 6570,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Business',
+								'Square Footage': 24893,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 2268,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Education',
+								'Square Footage': 7770,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Health Care',
+								'Square Footage': 19017,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Industrial',
+								'Square Footage': 52565,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Residential',
+								'Square Footage': 3486,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Storage',
+								'Square Footage': 10040,
+							},
+							{
+								'Year Constructed': 1947,
+								'Usage Description': 'Unusual',
+								'Square Footage': 5525,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Assembly',
+								'Square Footage': 179574,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Business',
+								'Square Footage': 233016,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 44695,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Health Care',
+								'Square Footage': 174368,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Industrial',
+								'Square Footage': 48906,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 3075,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Residential',
+								'Square Footage': 46077,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Storage',
+								'Square Footage': 44811,
+							},
+							{
+								'Year Constructed': 1948,
+								'Usage Description': 'Unusual',
+								'Square Footage': 16364,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Business',
+								'Square Footage': 230548,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 41173,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Education',
+								'Square Footage': 185214,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Health Care',
+								'Square Footage': 149947,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Industrial',
+								'Square Footage': 86968,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 3075,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Storage',
+								'Square Footage': 181363,
+							},
+							{
+								'Year Constructed': 1949,
+								'Usage Description': 'Unusual',
+								'Square Footage': 19190,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Assembly',
+								'Square Footage': 322711,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Business',
+								'Square Footage': 93828,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 286,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Health Care',
+								'Square Footage': 34306,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Industrial',
+								'Square Footage': 363667,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 1995,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Residential',
+								'Square Footage': 9990,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Storage',
+								'Square Footage': 360218,
+							},
+							{
+								'Year Constructed': 1950,
+								'Usage Description': 'Unusual',
+								'Square Footage': 19701,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Assembly',
+								'Square Footage': 111846,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Business',
+								'Square Footage': 105071,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 123386,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Education',
+								'Square Footage': 283142,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Health Care',
+								'Square Footage': 66905,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Industrial',
+								'Square Footage': 410175,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Residential',
+								'Square Footage': 5954,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Storage',
+								'Square Footage': 14792,
+							},
+							{
+								'Year Constructed': 1951,
+								'Usage Description': 'Unusual',
+								'Square Footage': 216,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Assembly',
+								'Square Footage': 333541,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Business',
+								'Square Footage': 237263,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 36389,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Education',
+								'Square Footage': 19460,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Health Care',
+								'Square Footage': 120793,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Industrial',
+								'Square Footage': 88909,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 99,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Residential',
+								'Square Footage': 1515,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Storage',
+								'Square Footage': 28056,
+							},
+							{
+								'Year Constructed': 1952,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1600,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Assembly',
+								'Square Footage': 67991,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Business',
+								'Square Footage': 28717,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 1892,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Education',
+								'Square Footage': 127644,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Health Care',
+								'Square Footage': 272586,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Industrial',
+								'Square Footage': 6046,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 1600,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Residential',
+								'Square Footage': 16506,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Storage',
+								'Square Footage': 41180,
+							},
+							{
+								'Year Constructed': 1953,
+								'Usage Description': 'Unusual',
+								'Square Footage': 38475,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Assembly',
+								'Square Footage': 86919,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Business',
+								'Square Footage': 50433,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 14800,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Education',
+								'Square Footage': 33634,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Health Care',
+								'Square Footage': 106813,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Industrial',
+								'Square Footage': 21515,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Residential',
+								'Square Footage': 20705,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Storage',
+								'Square Footage': 41884,
+							},
+							{
+								'Year Constructed': 1954,
+								'Usage Description': 'Unusual',
+								'Square Footage': 12280,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Assembly',
+								'Square Footage': 125155,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Business',
+								'Square Footage': 461591,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 994,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Health Care',
+								'Square Footage': 154,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Industrial',
+								'Square Footage': 94133,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 448,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Residential',
+								'Square Footage': 10739,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Storage',
+								'Square Footage': 117715,
+							},
+							{
+								'Year Constructed': 1955,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1755,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Assembly',
+								'Square Footage': 378443,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Business',
+								'Square Footage': 161867,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 20464,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Education',
+								'Square Footage': 353275,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Industrial',
+								'Square Footage': 62001,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Residential',
+								'Square Footage': 60460,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Storage',
+								'Square Footage': 106907,
+							},
+							{
+								'Year Constructed': 1956,
+								'Usage Description': 'Unusual',
+								'Square Footage': 13286,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Assembly',
+								'Square Footage': 291303,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Business',
+								'Square Footage': 110497,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Education',
+								'Square Footage': 558872,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Health Care',
+								'Square Footage': 78953,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Industrial',
+								'Square Footage': 97936,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 940,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Residential',
+								'Square Footage': 5170,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Storage',
+								'Square Footage': 96968,
+							},
+							{
+								'Year Constructed': 1957,
+								'Usage Description': 'Unusual',
+								'Square Footage': 21367,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Assembly',
+								'Square Footage': 314651,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Business',
+								'Square Footage': 73808,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 39212,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Education',
+								'Square Footage': 432,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Health Care',
+								'Square Footage': 61376,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Industrial',
+								'Square Footage': 394810,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 200,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Residential',
+								'Square Footage': 12757,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Storage',
+								'Square Footage': 159599,
+							},
+							{
+								'Year Constructed': 1958,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1977,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Assembly',
+								'Square Footage': 480802,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Business',
+								'Square Footage': 399062,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 25130,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Education',
+								'Square Footage': 113701,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Industrial',
+								'Square Footage': 323578,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 10368,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Residential',
+								'Square Footage': 6648,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Storage',
+								'Square Footage': 100072,
+							},
+							{
+								'Year Constructed': 1959,
+								'Usage Description': 'Unusual',
+								'Square Footage': 8236,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Assembly',
+								'Square Footage': 40965,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Business',
+								'Square Footage': 188358,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Health Care',
+								'Square Footage': 76883,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Industrial',
+								'Square Footage': 388754,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 497,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Residential',
+								'Square Footage': 59493,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Storage',
+								'Square Footage': 129078,
+							},
+							{
+								'Year Constructed': 1960,
+								'Usage Description': 'Unusual',
+								'Square Footage': 22470,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Assembly',
+								'Square Footage': 511044,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Business',
+								'Square Footage': 360651,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Education',
+								'Square Footage': 5828,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Health Care',
+								'Square Footage': 183750,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Industrial',
+								'Square Footage': 31520,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Residential',
+								'Square Footage': 3687,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Storage',
+								'Square Footage': 74556,
+							},
+							{
+								'Year Constructed': 1961,
+								'Usage Description': 'Unusual',
+								'Square Footage': 18275,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Assembly',
+								'Square Footage': 353422,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Business',
+								'Square Footage': 72926,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Education',
+								'Square Footage': 255697,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Health Care',
+								'Square Footage': 223405,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Industrial',
+								'Square Footage': 182014,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Residential',
+								'Square Footage': 512064,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Storage',
+								'Square Footage': 186546,
+							},
+							{
+								'Year Constructed': 1962,
+								'Usage Description': 'Unusual',
+								'Square Footage': 22818,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Assembly',
+								'Square Footage': 1080119,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Business',
+								'Square Footage': 814810,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 9324,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Education',
+								'Square Footage': 404906,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Health Care',
+								'Square Footage': 353820,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Industrial',
+								'Square Footage': 334985,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 19406,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Residential',
+								'Square Footage': 280438,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Storage',
+								'Square Footage': 177949,
+							},
+							{
+								'Year Constructed': 1963,
+								'Usage Description': 'Unusual',
+								'Square Footage': 31032,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Assembly',
+								'Square Footage': 588608,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Business',
+								'Square Footage': 371693,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 29154,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Education',
+								'Square Footage': 316712,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Health Care',
+								'Square Footage': 196426,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Industrial',
+								'Square Footage': 327858,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 1700,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Residential',
+								'Square Footage': 12138,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Storage',
+								'Square Footage': 255455,
+							},
+							{
+								'Year Constructed': 1964,
+								'Usage Description': 'Unusual',
+								'Square Footage': 8834,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Assembly',
+								'Square Footage': 692297,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Business',
+								'Square Footage': 706107,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 75556,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Education',
+								'Square Footage': 644560,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Health Care',
+								'Square Footage': 638671,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Industrial',
+								'Square Footage': 288038,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 960,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Residential',
+								'Square Footage': 244020,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Storage',
+								'Square Footage': 152857,
+							},
+							{
+								'Year Constructed': 1965,
+								'Usage Description': 'Unusual',
+								'Square Footage': 13161,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Assembly',
+								'Square Footage': 468887,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Business',
+								'Square Footage': 272045,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 95586,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Education',
+								'Square Footage': 537096,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Health Care',
+								'Square Footage': 556546,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Industrial',
+								'Square Footage': 239059,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2016,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Residential',
+								'Square Footage': 238900,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Storage',
+								'Square Footage': 66801,
+							},
+							{
+								'Year Constructed': 1966,
+								'Usage Description': 'Unusual',
+								'Square Footage': 19871,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Assembly',
+								'Square Footage': 580517,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Business',
+								'Square Footage': 591598,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 275853,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Education',
+								'Square Footage': 336498,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Health Care',
+								'Square Footage': 213124,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Industrial',
+								'Square Footage': 298090,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Residential',
+								'Square Footage': 239198,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Storage',
+								'Square Footage': 93891,
+							},
+							{
+								'Year Constructed': 1967,
+								'Usage Description': 'Unusual',
+								'Square Footage': 20811,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Assembly',
+								'Square Footage': 769152,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Business',
+								'Square Footage': 284732,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 6600,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Education',
+								'Square Footage': 86493,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Health Care',
+								'Square Footage': 111315,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Industrial',
+								'Square Footage': 104561,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Residential',
+								'Square Footage': 23094,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Storage',
+								'Square Footage': 166964,
+							},
+							{
+								'Year Constructed': 1968,
+								'Usage Description': 'Unusual',
+								'Square Footage': 3894,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Assembly',
+								'Square Footage': 26653,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Business',
+								'Square Footage': 685205,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 100026,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Education',
+								'Square Footage': 347981,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Industrial',
+								'Square Footage': 138531,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 9516,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Residential',
+								'Square Footage': 353220,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Storage',
+								'Square Footage': 74360,
+							},
+							{
+								'Year Constructed': 1969,
+								'Usage Description': 'Unusual',
+								'Square Footage': 11020,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Assembly',
+								'Square Footage': 324087,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Business',
+								'Square Footage': 290377,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 864,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Education',
+								'Square Footage': 605756,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Health Care',
+								'Square Footage': 361635,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Industrial',
+								'Square Footage': 166922,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Residential',
+								'Square Footage': 117817,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Storage',
+								'Square Footage': 196977,
+							},
+							{
+								'Year Constructed': 1970,
+								'Usage Description': 'Unusual',
+								'Square Footage': 24106,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Assembly',
+								'Square Footage': 1352783,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Business',
+								'Square Footage': 247996,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 156585,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Education',
+								'Square Footage': 204623,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Industrial',
+								'Square Footage': 49119,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Residential',
+								'Square Footage': 49095,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Storage',
+								'Square Footage': 77831,
+							},
+							{
+								'Year Constructed': 1971,
+								'Usage Description': 'Unusual',
+								'Square Footage': 26230,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Assembly',
+								'Square Footage': 889993,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Business',
+								'Square Footage': 140255,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 7412,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Education',
+								'Square Footage': 131734,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Health Care',
+								'Square Footage': 212090,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Industrial',
+								'Square Footage': 315899,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 96,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Residential',
+								'Square Footage': 8242,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Storage',
+								'Square Footage': 135633,
+							},
+							{
+								'Year Constructed': 1972,
+								'Usage Description': 'Unusual',
+								'Square Footage': 24154,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Assembly',
+								'Square Footage': 252217,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Business',
+								'Square Footage': 86640,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 1339,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Education',
+								'Square Footage': 293214,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Industrial',
+								'Square Footage': 30248,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Residential',
+								'Square Footage': 4442,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Storage',
+								'Square Footage': 32724,
+							},
+							{
+								'Year Constructed': 1973,
+								'Usage Description': 'Unusual',
+								'Square Footage': 10946,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Assembly',
+								'Square Footage': 138461,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Business',
+								'Square Footage': 193294,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 14392,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Education',
+								'Square Footage': 351578,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Health Care',
+								'Square Footage': 400062,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Industrial',
+								'Square Footage': 48931,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 4198,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Residential',
+								'Square Footage': 5594,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Storage',
+								'Square Footage': 47533,
+							},
+							{
+								'Year Constructed': 1974,
+								'Usage Description': 'Unusual',
+								'Square Footage': 6269,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Assembly',
+								'Square Footage': 579547,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Business',
+								'Square Footage': 122653,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 163984,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Education',
+								'Square Footage': 179758,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Health Care',
+								'Square Footage': 75748,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Industrial',
+								'Square Footage': 166298,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 645,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Residential',
+								'Square Footage': 17016,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Storage',
+								'Square Footage': 223340,
+							},
+							{
+								'Year Constructed': 1975,
+								'Usage Description': 'Unusual',
+								'Square Footage': 24314,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Assembly',
+								'Square Footage': 559364,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Business',
+								'Square Footage': 89566,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 192,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Education',
+								'Square Footage': 337476,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Industrial',
+								'Square Footage': 128035,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2418,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Residential',
+								'Square Footage': 3231,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Storage',
+								'Square Footage': 165025,
+							},
+							{
+								'Year Constructed': 1976,
+								'Usage Description': 'Unusual',
+								'Square Footage': 10892,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Assembly',
+								'Square Footage': 43581,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Business',
+								'Square Footage': 18961,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 32645,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Health Care',
+								'Square Footage': 671416,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Industrial',
+								'Square Footage': 40728,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 1657,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Storage',
+								'Square Footage': 62903,
+							},
+							{
+								'Year Constructed': 1977,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2882,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Assembly',
+								'Square Footage': 431394,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Business',
+								'Square Footage': 255804,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 2310,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Education',
+								'Square Footage': 132700,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Health Care',
+								'Square Footage': 6763,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Industrial',
+								'Square Footage': 74925,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Storage',
+								'Square Footage': 178174,
+							},
+							{
+								'Year Constructed': 1978,
+								'Usage Description': 'Unusual',
+								'Square Footage': 5131,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Assembly',
+								'Square Footage': 351496,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Business',
+								'Square Footage': 126392,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 52039,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Education',
+								'Square Footage': 3148,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Health Care',
+								'Square Footage': 19776,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Industrial',
+								'Square Footage': 26454,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Residential',
+								'Square Footage': 1650,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Storage',
+								'Square Footage': 118397,
+							},
+							{
+								'Year Constructed': 1979,
+								'Usage Description': 'Unusual',
+								'Square Footage': 11687,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Assembly',
+								'Square Footage': 30057,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Business',
+								'Square Footage': 15461,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 33148,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Education',
+								'Square Footage': 17107,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Industrial',
+								'Square Footage': 44415,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Residential',
+								'Square Footage': 62000,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Storage',
+								'Square Footage': 59972,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Unusual',
+								'Square Footage': 25766,
+							},
+							{
+								'Year Constructed': 1980,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 456,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Assembly',
+								'Square Footage': 478203,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Business',
+								'Square Footage': 40830,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 314980,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Education',
+								'Square Footage': 370354,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Health Care',
+								'Square Footage': 28135,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Industrial',
+								'Square Footage': 84026,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 720,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Residential',
+								'Square Footage': 16846,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Storage',
+								'Square Footage': 168614,
+							},
+							{
+								'Year Constructed': 1981,
+								'Usage Description': 'Unusual',
+								'Square Footage': 47949,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Assembly',
+								'Square Footage': 29386,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Business',
+								'Square Footage': 952732,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 9600,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Education',
+								'Square Footage': 98347,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Industrial',
+								'Square Footage': 18114,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2640,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Storage',
+								'Square Footage': 79742,
+							},
+							{
+								'Year Constructed': 1982,
+								'Usage Description': 'Unusual',
+								'Square Footage': 40232,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Assembly',
+								'Square Footage': 200447,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Business',
+								'Square Footage': 165763,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 517126,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Education',
+								'Square Footage': 82063,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Industrial',
+								'Square Footage': 37382,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 900,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Residential',
+								'Square Footage': 1207,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Storage',
+								'Square Footage': 64974,
+							},
+							{
+								'Year Constructed': 1983,
+								'Usage Description': 'Unusual',
+								'Square Footage': 6477,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Assembly',
+								'Square Footage': 263692,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Business',
+								'Square Footage': 32897,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 402084,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Education',
+								'Square Footage': 96024,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Health Care',
+								'Square Footage': 75026,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Industrial',
+								'Square Footage': 97382,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Residential',
+								'Square Footage': 7372,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Storage',
+								'Square Footage': 63240,
+							},
+							{
+								'Year Constructed': 1984,
+								'Usage Description': 'Unusual',
+								'Square Footage': 9117,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Assembly',
+								'Square Footage': 96671,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Business',
+								'Square Footage': 1205474,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 98,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Education',
+								'Square Footage': 57038,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Health Care',
+								'Square Footage': 22530,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Industrial',
+								'Square Footage': 22908,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2216,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Residential',
+								'Square Footage': 5974,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Storage',
+								'Square Footage': 182639,
+							},
+							{
+								'Year Constructed': 1985,
+								'Usage Description': 'Unusual',
+								'Square Footage': 26790,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Assembly',
+								'Square Footage': 133851,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Business',
+								'Square Footage': 185653,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 210934,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Education',
+								'Square Footage': 66492,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Health Care',
+								'Square Footage': 99376,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Industrial',
+								'Square Footage': 134262,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 4200,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Residential',
+								'Square Footage': 12720,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Storage',
+								'Square Footage': 157551,
+							},
+							{
+								'Year Constructed': 1986,
+								'Usage Description': 'Unusual',
+								'Square Footage': 80871,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Assembly',
+								'Square Footage': 243724,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Business',
+								'Square Footage': 291194,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 327613,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Education',
+								'Square Footage': 507522,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Health Care',
+								'Square Footage': 64772,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Industrial',
+								'Square Footage': 194673,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2112,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Residential',
+								'Square Footage': 119344,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Storage',
+								'Square Footage': 352087,
+							},
+							{
+								'Year Constructed': 1987,
+								'Usage Description': 'Unusual',
+								'Square Footage': 69367,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Assembly',
+								'Square Footage': 23468,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Business',
+								'Square Footage': 132964,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 28640,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Education',
+								'Square Footage': 5584,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Health Care',
+								'Square Footage': 44878,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Industrial',
+								'Square Footage': 109820,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Residential',
+								'Square Footage': 39152,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Storage',
+								'Square Footage': 114866,
+							},
+							{
+								'Year Constructed': 1988,
+								'Usage Description': 'Unusual',
+								'Square Footage': 57551,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Assembly',
+								'Square Footage': 242597,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Business',
+								'Square Footage': 165587,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 21484,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Education',
+								'Square Footage': 3205,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Health Care',
+								'Square Footage': 15025,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Industrial',
+								'Square Footage': 110200,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Residential',
+								'Square Footage': 13836,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Storage',
+								'Square Footage': 136702,
+							},
+							{
+								'Year Constructed': 1989,
+								'Usage Description': 'Unusual',
+								'Square Footage': 20366,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Assembly',
+								'Square Footage': 281069,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Business',
+								'Square Footage': 240291,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 340241,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Education',
+								'Square Footage': 178027,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Industrial',
+								'Square Footage': 17435,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Residential',
+								'Square Footage': 91060,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Storage',
+								'Square Footage': 182958,
+							},
+							{
+								'Year Constructed': 1990,
+								'Usage Description': 'Unusual',
+								'Square Footage': 22116,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Assembly',
+								'Square Footage': 311925,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Business',
+								'Square Footage': 66845,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 84088,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Education',
+								'Square Footage': 120411,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Health Care',
+								'Square Footage': 40000,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Industrial',
+								'Square Footage': 22187,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 14344,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Residential',
+								'Square Footage': 142771,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Storage',
+								'Square Footage': 884393,
+							},
+							{
+								'Year Constructed': 1991,
+								'Usage Description': 'Unusual',
+								'Square Footage': 13929,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Assembly',
+								'Square Footage': 128627,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Business',
+								'Square Footage': 107049,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 386082,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Education',
+								'Square Footage': 167994,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Industrial',
+								'Square Footage': 17971,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 240,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Residential',
+								'Square Footage': 47080,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Storage',
+								'Square Footage': 323667,
+							},
+							{
+								'Year Constructed': 1992,
+								'Usage Description': 'Unusual',
+								'Square Footage': 14386,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Assembly',
+								'Square Footage': 43387,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Business',
+								'Square Footage': 44280,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 10455,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Education',
+								'Square Footage': 27492,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Health Care',
+								'Square Footage': 146930,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Industrial',
+								'Square Footage': 20258,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2382,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Residential',
+								'Square Footage': 1740,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Storage',
+								'Square Footage': 59450,
+							},
+							{
+								'Year Constructed': 1993,
+								'Usage Description': 'Unusual',
+								'Square Footage': 24736,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Assembly',
+								'Square Footage': 78710,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Business',
+								'Square Footage': 8398,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 99014,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Health Care',
+								'Square Footage': 10000,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Industrial',
+								'Square Footage': 20508,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Public',
+								'Square Footage': 560,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Residential',
+								'Square Footage': 10988,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Storage',
+								'Square Footage': 209183,
+							},
+							{
+								'Year Constructed': 1994,
+								'Usage Description': 'Unusual',
+								'Square Footage': 35639,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Assembly',
+								'Square Footage': 53405,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Business',
+								'Square Footage': 28319,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 395034,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Education',
+								'Square Footage': 213086,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Industrial',
+								'Square Footage': 72799,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 4704,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Storage',
+								'Square Footage': 138092,
+							},
+							{
+								'Year Constructed': 1995,
+								'Usage Description': 'Unusual',
+								'Square Footage': 13485,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Assembly',
+								'Square Footage': 4804,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Business',
+								'Square Footage': 47358,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 168768,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Education',
+								'Square Footage': 343342,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Health Care',
+								'Square Footage': 354536,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Industrial',
+								'Square Footage': 389505,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 3790,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Residential',
+								'Square Footage': 65170,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Storage',
+								'Square Footage': 147395,
+							},
+							{
+								'Year Constructed': 1996,
+								'Usage Description': 'Unusual',
+								'Square Footage': 11206,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Assembly',
+								'Square Footage': 62597,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Business',
+								'Square Footage': 1368,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 574074,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Education',
+								'Square Footage': 217392,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Industrial',
+								'Square Footage': 5525,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Residential',
+								'Square Footage': 6711,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Storage',
+								'Square Footage': 112682,
+							},
+							{
+								'Year Constructed': 1997,
+								'Usage Description': 'Unusual',
+								'Square Footage': 11711,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Assembly',
+								'Square Footage': 57143,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Business',
+								'Square Footage': 31410,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 91877,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Education',
+								'Square Footage': 426,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Industrial',
+								'Square Footage': 15358,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 894,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Residential',
+								'Square Footage': 135737,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Storage',
+								'Square Footage': 119671,
+							},
+							{
+								'Year Constructed': 1998,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2373,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Assembly',
+								'Square Footage': 4485,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Business',
+								'Square Footage': 7425,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 90204,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Education',
+								'Square Footage': 9048,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Industrial',
+								'Square Footage': 12712,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Residential',
+								'Square Footage': 25805,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Storage',
+								'Square Footage': 165485,
+							},
+							{
+								'Year Constructed': 1999,
+								'Usage Description': 'Unusual',
+								'Square Footage': 22348,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Assembly',
+								'Square Footage': 82155,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Business',
+								'Square Footage': 4864,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 451555,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Education',
+								'Square Footage': 143739,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Industrial',
+								'Square Footage': 21866,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 2950,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Residential',
+								'Square Footage': 156628,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Storage',
+								'Square Footage': 56352,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Unusual',
+								'Square Footage': 25289,
+							},
+							{
+								'Year Constructed': 2000,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 24,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Assembly',
+								'Square Footage': 53099,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Business',
+								'Square Footage': 334732,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 577784,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Education',
+								'Square Footage': 5995,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Health Care',
+								'Square Footage': 23646,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Industrial',
+								'Square Footage': 56689,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 3000,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Residential',
+								'Square Footage': 97754,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Storage',
+								'Square Footage': 134964,
+							},
+							{
+								'Year Constructed': 2001,
+								'Usage Description': 'Unusual',
+								'Square Footage': 14885,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Assembly',
+								'Square Footage': 348384,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Business',
+								'Square Footage': 180615,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 211577,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Education',
+								'Square Footage': 10800,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Health Care',
+								'Square Footage': 106077,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Industrial',
+								'Square Footage': 57950,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Residential',
+								'Square Footage': 4000,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Storage',
+								'Square Footage': 66851,
+							},
+							{
+								'Year Constructed': 2002,
+								'Usage Description': 'Unusual',
+								'Square Footage': 19212,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Assembly',
+								'Square Footage': 120508,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Business',
+								'Square Footage': 240205,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 46330,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Education',
+								'Square Footage': 319377,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Industrial',
+								'Square Footage': 40622,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Residential',
+								'Square Footage': 4945,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Storage',
+								'Square Footage': 90194,
+							},
+							{
+								'Year Constructed': 2003,
+								'Usage Description': 'Unusual',
+								'Square Footage': 12010,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Assembly',
+								'Square Footage': 2362,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Business',
+								'Square Footage': 14695,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Education',
+								'Square Footage': 349127,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Industrial',
+								'Square Footage': 47291,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Residential',
+								'Square Footage': 10392,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Storage',
+								'Square Footage': 39356,
+							},
+							{
+								'Year Constructed': 2004,
+								'Usage Description': 'Unusual',
+								'Square Footage': 6622,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Assembly',
+								'Square Footage': 178912,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Business',
+								'Square Footage': 330000,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 47915,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Education',
+								'Square Footage': 350247,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Health Care',
+								'Square Footage': 62338,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Industrial',
+								'Square Footage': 288,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Storage',
+								'Square Footage': 337836,
+							},
+							{
+								'Year Constructed': 2005,
+								'Usage Description': 'Unusual',
+								'Square Footage': 36345,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Assembly',
+								'Square Footage': 64694,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Business',
+								'Square Footage': 73828,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 264,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Education',
+								'Square Footage': 301321,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Industrial',
+								'Square Footage': 14205,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Mercantile',
+								'Square Footage': 69990,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Residential',
+								'Square Footage': 18343,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Storage',
+								'Square Footage': 240828,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Unusual',
+								'Square Footage': 129706,
+							},
+							{
+								'Year Constructed': 2006,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 14411,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Assembly',
+								'Square Footage': 58452,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 20460,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Education',
+								'Square Footage': 6695,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Health Care',
+								'Square Footage': 63000,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Industrial',
+								'Square Footage': 680,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Residential',
+								'Square Footage': 195396,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Storage',
+								'Square Footage': 28377,
+							},
+							{
+								'Year Constructed': 2007,
+								'Usage Description': 'Unusual',
+								'Square Footage': 23419,
+							},
+							{
+								'Year Constructed': 2008,
+								'Usage Description': 'Assembly',
+								'Square Footage': 150,
+							},
+							{
+								'Year Constructed': 2008,
+								'Usage Description': 'Business',
+								'Square Footage': 3000,
+							},
+							{
+								'Year Constructed': 2008,
+								'Usage Description': 'Education',
+								'Square Footage': 144580,
+							},
+							{
+								'Year Constructed': 2008,
+								'Usage Description': 'Storage',
+								'Square Footage': 11614,
+							},
+							{
+								'Year Constructed': 2008,
+								'Usage Description': 'Unusual',
+								'Square Footage': 879,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Assembly',
+								'Square Footage': 900,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Business',
+								'Square Footage': 121891,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 64,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Industrial',
+								'Square Footage': 17000,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Residential',
+								'Square Footage': 682,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Storage',
+								'Square Footage': 20617,
+							},
+							{
+								'Year Constructed': 2009,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2570,
+							},
+							{
+								'Year Constructed': 2010,
+								'Usage Description': 'Business',
+								'Square Footage': 148543,
+							},
+							{
+								'Year Constructed': 2010,
+								'Usage Description': 'Education',
+								'Square Footage': 35100,
+							},
+							{
+								'Year Constructed': 2010,
+								'Usage Description': 'Industrial',
+								'Square Footage': 13104,
+							},
+							{
+								'Year Constructed': 2010,
+								'Usage Description': 'Storage',
+								'Square Footage': 179812,
+							},
+							{
+								'Year Constructed': 2010,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2166,
+							},
+							{
+								'Year Constructed': 2011,
+								'Usage Description': 'Assembly',
+								'Square Footage': 768,
+							},
+							{
+								'Year Constructed': 2011,
+								'Usage Description': 'Business',
+								'Square Footage': 68183,
+							},
+							{
+								'Year Constructed': 2011,
+								'Usage Description': 'Education',
+								'Square Footage': 16095,
+							},
+							{
+								'Year Constructed': 2011,
+								'Usage Description': 'Industrial',
+								'Square Footage': 6592,
+							},
+							{
+								'Year Constructed': 2011,
+								'Usage Description': 'Storage',
+								'Square Footage': 19494,
+							},
+							{
+								'Year Constructed': 2011,
+								'Usage Description': 'Unusual',
+								'Square Footage': 696,
+							},
+							{
+								'Year Constructed': 2012,
+								'Usage Description': 'Business',
+								'Square Footage': 60300,
+							},
+							{
+								'Year Constructed': 2012,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 128,
+							},
+							{
+								'Year Constructed': 2012,
+								'Usage Description': 'Education',
+								'Square Footage': 145664,
+							},
+							{
+								'Year Constructed': 2012,
+								'Usage Description': 'Storage',
+								'Square Footage': 40797,
+							},
+							{
+								'Year Constructed': 2012,
+								'Usage Description': 'Unusual',
+								'Square Footage': 2300,
+							},
+							{
+								'Year Constructed': 2013,
+								'Usage Description': 'Education',
+								'Square Footage': 356177,
+							},
+							{
+								'Year Constructed': 2013,
+								'Usage Description': 'Industrial',
+								'Square Footage': 32591,
+							},
+							{
+								'Year Constructed': 2013,
+								'Usage Description': 'Storage',
+								'Square Footage': 12868,
+							},
+							{
+								'Year Constructed': 2013,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 432,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Assembly',
+								'Square Footage': 6785,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Business',
+								'Square Footage': 56750,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 36000,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Education',
+								'Square Footage': 403451,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Health Care',
+								'Square Footage': 10054,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Residential',
+								'Square Footage': 93900,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Storage',
+								'Square Footage': 47181,
+							},
+							{
+								'Year Constructed': 2014,
+								'Usage Description': 'Unusual',
+								'Square Footage': 144,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Assembly',
+								'Square Footage': 157035,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Business',
+								'Square Footage': 9675,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Education',
+								'Square Footage': 35162,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Health Care',
+								'Square Footage': 185525,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Not provided',
+								'Square Footage': 384,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Residential',
+								'Square Footage': 88657,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Storage',
+								'Square Footage': 30601,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Unusual',
+								'Square Footage': 1290,
+							},
+							{
+								'Year Constructed': 2015,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 444,
+							},
+							{
+								'Year Constructed': 2016,
+								'Usage Description': 'Business',
+								'Square Footage': 184720,
+							},
+							{
+								'Year Constructed': 2016,
+								'Usage Description': 'Detention & Correc',
+								'Square Footage': 250,
+							},
+							{
+								'Year Constructed': 2016,
+								'Usage Description': 'Education',
+								'Square Footage': 27500,
+							},
+							{
+								'Year Constructed': 2016,
+								'Usage Description': 'Residential',
+								'Square Footage': 9588,
+							},
+							{
+								'Year Constructed': 2016,
+								'Usage Description': 'Storage',
+								'Square Footage': 37371,
+							},
+							{
+								'Year Constructed': 2016,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 4368,
+							},
+							{
+								'Year Constructed': 2017,
+								'Usage Description': 'Assembly',
+								'Square Footage': 660,
+							},
+							{
+								'Year Constructed': 2017,
+								'Usage Description': 'Business',
+								'Square Footage': 512,
+							},
+							{
+								'Year Constructed': 2017,
+								'Usage Description': 'Storage',
+								'Square Footage': 9643,
+							},
+							{
+								'Year Constructed': 2017,
+								'Usage Description': 'Utiility & Miscellan',
+								'Square Footage': 288,
+							},
+							{
+								'Year Constructed': 2018,
+								'Usage Description': 'Business',
+								'Square Footage': 12000,
+							},
+							{
+								'Year Constructed': 2018,
+								'Usage Description': 'Storage',
+								'Square Footage': 8360,
+							},
+							{
+								'Year Constructed': 2019,
+								'Usage Description': 'Business',
+								'Square Footage': 1520,
+							},
+						],
+					},
+				};
+				var embedOpt = { mode: 'vega-lite' };
+
+				function showError(el, error) {
+					el.innerHTML =
+						'<div style="color:red;">' +
+						'<p>JavaScript Error: ' +
+						error.message +
+						'</p>' +
+						"<p>This usually means there's a typo in your chart specification. " +
+						'See the javascript console for the full traceback.</p>' +
+						'</div>';
+					throw error;
+				}
+				const el = document.getElementById('vis');
+				vegaEmbed('#vis', spec, embedOpt).catch(error => showError(el, error));
+			})(vegaEmbed);
+		</script>
+	</body>
+</html>
