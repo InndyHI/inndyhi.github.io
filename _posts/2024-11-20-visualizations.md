@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Visualizations
-permalink: /visualizations/
+title: 'Visualizations'
 date: 2024-11-20 05:09:51 -0600
 categories: jekyll update
 ---
