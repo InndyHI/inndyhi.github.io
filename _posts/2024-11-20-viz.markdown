@@ -1,0 +1,31 @@
+---
+layout: post
+title: 'Visualizations'
+date: 2024-11-20 05:09:51 -0600
+categories: jekyll update
+---
+
+# Yearly Square Footage of Constructed Buildings
+
+The first chart displays the total square footage of buildings constructed each year.
+
+<iframe src="/assets/chart1.html" width="200%" height="500" frameborder="0"></iframe>
+
+# Total Square Footage by Usage Description
+
+The second chart breaks down the square footage by usage description in a stacked bar plot.
+
+<iframe src="/assets/chart2.html" width="200%" height="500" frameborder="0"></iframe>
+
+<div style="text-align: center;">
+    <a href="/visualizations/" style="text-decoration: none;">
+        <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            View Raw Code
+        </button>
+    </a>
+    <a href="/about/" style="text-decoration: none;">
+        <button style="padding: 10px 20px; background-color: #28A745; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            View Data
+        </button>
+    </a>
+</div>
