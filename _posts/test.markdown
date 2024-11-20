@@ -3,6 +3,7 @@ layout: post
 title: Visualizations
 permalink: /visualizations/
 date: 2024-11-20 05:09:51 -0600
+categories: jekyll update
 ---
 
 # Yearly Square Footage of Constructed Buildings
